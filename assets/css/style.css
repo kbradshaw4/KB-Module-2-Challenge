@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+#header {
+    padding: 10px;
+    font-family: 'Tahoma', 'Lucida Sans Univode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#header h1 {
+    display: inline-block;
+    font-size: 60px;
+}
+
+#header nav {
+    padding-top: 20px;
+    margin-right: 20px;
+    float: right;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#header nav ul {
+    list-style-type: none;
+}
+
+#header nav ul li {
+    display: inline-block;
+    margin-left: 25px;   
+}
+
+#subheader {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 100%;
+    background-image: url(../images/abstract-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#about-me {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+#about-me h2 {
+    line-height: 300px;
+}
+
+#about-me img {
+    
+    position: absolute;
+    left: 23%;
+    top: 15%;
+    border-radius: 50%;
+    height: 75%;
+    max-width: 75%;
+}
+
+#about-me p{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    font-family: 'Tahoma', 'Lucida Sans Univode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+main {
+    position: relative;
+}
+
+main h2 {
+    line-height: 650px;
+}
+
+.section-titles {
+    position: absolute;
+    left: 7%;
+    display: inline-block;
+}
+
+#work {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+#work h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.projects {
+padding: 10px;
+margin: 5px;
+border: 2px solid black;
+height: 100px;
+width: 40%;
+}
+
+
+#project-1 {
+    height: 200px;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/project-1.jpeg)
+}
+
+#project-2 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/project-2.jpeg)
+}
+
+#project-3 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/project-3.jpeg)
+}
+
+#project-4 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/project-4.jpeg)
+}
+
+#project-5 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/project-5.jpeg)
+}
+
+#contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 200px;
+}
+
+#contact-me h2 {
+    line-height: 200px;
+}
+
+#contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+    padding: 1%;
+}
+
+@media screen and (max-width: 960px) {
+    #about-me p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #about-me img {
+        height: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    #about-me img {
+        display: none;
+    }
+}
